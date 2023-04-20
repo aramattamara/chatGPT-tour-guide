@@ -28,7 +28,7 @@ def api():
     return jsonify({"result": response.choices[0].text})
 
 
-# Define function to craete prompt
+# Define function to create prompt
 def generate_prompt(city, season, numDays):
     prompt = f"Write tour for {numDays} in {city} in {season}"
     return prompt
